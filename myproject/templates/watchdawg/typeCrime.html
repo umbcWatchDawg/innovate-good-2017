@@ -4,15 +4,13 @@
   <form class="form-signin" action="{% url 'elements' %}">
     <h2 class="form-signin-heading">Enter the Type of Crime</h2>
     <div class="checkbox">
-      <label>
-        <input type="checkbox" value="Assault"> Assault
-        <p> </p>
-        <input type="checkbox" value="Accident" > Car Accident
-        <p> </p>
-        <input type="checkbox" value="Harassment" > Harassment
-        <p> </p>
-        <input type="checkbox" value="Theft" > Theft
-      </label>
+      <input type="checkbox" value="Assault"> Assault
+      <p> </p>
+      <input type="checkbox" value="Accident" > Car Accident
+      <p> </p>
+      <input type="checkbox" value="Harassment" > Harassment
+      <p> </p>
+      <input type="checkbox" value="Theft" > Theft
     </div>
     <input type="crime" id="inputCrime" class="form-control" input maxlength="400" placeholder="Other (max 400 characters)" required autofocus>
     <p> </p>
