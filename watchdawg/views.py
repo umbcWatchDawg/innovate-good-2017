@@ -13,7 +13,7 @@ def about(request):
     return render(request, 'watchdawg/about.html', {'path': 'about'})
 
 def contact(request):
-    return render(request, 'watchdawg/contact.html', {'path': 'contact')
+    return render(request, 'watchdawg/contact.html', {'path': 'contact'})
 
 def login(request):
     return render(request, 'watchdawg/signIn.html')
