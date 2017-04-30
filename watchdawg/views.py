@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth import logout
+
 from . import models
-from django.forms import Form
 from datetime import datetime
 
 def index(request):
@@ -35,10 +35,10 @@ def victim_witness(request):
 #step 2
 def crime_type(request):
     if request.method == 'POST':
-        form = Form(request.POST)
+        obj_id = request.POST.get('id','')
+        form = CrimeType()
 
-
-    return render(request, 'watchdawg/typeCrime.html')
+    return render(request, 'watchdawg/typeCrime.html', {'id': obj_id, 'form': form})
 
 def elements(request):
     return render(request, 'watchdawg/elements.html')
