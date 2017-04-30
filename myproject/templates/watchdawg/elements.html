@@ -1,25 +1,22 @@
 {% extends "layout.html" %}
 {% block body %}
-    <div class="container">
-
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Check All Elements Involved</h2>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="Vehicle"> Vehicle
-			<p> <p>
-			<input type="checkbox" value="Weapon" > Weapon
-			<p> <p>
-			<input type="checkbox" value="Single Person" > Single Person
-			<p> <p>
-			<input type="checkbox" value="Group People" > Group of People
-          </label>
-        </div>
-		
-		<input type="crime" id="inputCrime" class="form-control" placeholder="Other (max 100 characters)" required autofocus>
-		<p> </p>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
-      </form>
-
-    </div> <!-- /container -->
+<div class="container">
+    <form class="form-signin" action="{% url 'questions' %}">
+    <h2 class="form-signin-heading">Check All Elements Involved</h2>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="Vehicle"> Vehicle
+	<p> <p>
+	<input type="checkbox" value="Weapon" > Weapon
+	<p> <p>
+	<input type="checkbox" value="Single Person" > Single Person
+	<p> <p>
+	<input type="checkbox" value="Group People" > Group of People
+      </label>
+    </div>	
+    <input type="crime" id="inputCrime" class="form-control" placeholder="Other (max 100 characters)" required autofocus>
+    <p> </p>
+    <button class="btn btn-lg btn-block" type="submit">Submit</button>
+  </form>
+</div>
 {% endblock %}

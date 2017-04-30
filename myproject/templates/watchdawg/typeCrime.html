@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block body %}
 <div class="container">
-    <form class="form-signin" action="{% url 'elements' %}">
+  <form class="form-signin" action="{% url 'elements' %}">
     <h2 class="form-signin-heading">Enter the Type of Crime</h2>
     <div class="checkbox">
       <label>
@@ -14,7 +14,7 @@
         <input type="checkbox" value="Theft" > Theft
       </label>
     </div>
-    <input type="crime" id="inputCrime" class="form-control" input maxlength = "100" placeholder="Other (max 100 characters)" required autofocus>
+    <input type="crime" id="inputCrime" class="form-control" input maxlength="400" placeholder="Other (max 400 characters)" required autofocus>
     <p> </p>
     <button class="btn btn-lg btn-block" type="submit">Continue</button>
   </form>
