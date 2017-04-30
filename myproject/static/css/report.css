@@ -7,13 +7,14 @@ body {
   margin-left: 100px;
   margin-right: 100px;
   text-align: center;
-  max-width: 1000px;
+  max-width: 750px;
   }
 .form-signin {
   background-color: #e5e5e5;
   /*max-width: 330px;*/
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 15px;
   margin: 0 auto;
 }
 .form-signin .form-signin-heading{
@@ -66,6 +67,7 @@ body {
 /* Custom page header */
 .header {
   background-color: #ffffff;
+  padding = 15px;
   /*padding-bottom: 20px;*/
   font-size: 10px;
   /*margin-right: 30px;
@@ -112,6 +114,7 @@ body {
 
 /* Custom page footer */
 .footer {
+  max-width: 750px;
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
@@ -222,14 +225,18 @@ body {
   .header,
   .marketing,
   .footer {
+    max-width: 750px;
     margin-right: 30px;
     margin-left: 30px;
+	
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
-	  margin-right: 30px;
-  margin-left: 30px;
+    background-color: #ffffff;
+	padding = 15px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+    margin-left: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   /*.jumbotron {
