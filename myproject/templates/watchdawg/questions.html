@@ -1,4 +1,15 @@
 {% extends "layout.html" %}
 {% block body %}
 Hello, here are the questions
+
+<div class="jumbotron">
+  <h3>Please provide information relevant to the elements you previously selected.</h3>
+  <form id="data-form" class="signin-form" action="{% url 'submitted' %}" method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="id" value="{{ id }}" />
+    <textarea name="raw-data" form="data-form" placeholder="Write information here..."></textarea>
+    <button class="btn btn-lg btn-block" type="submit" role="button">Submit</button>
+  </form>
+</div>
+
 {% endblock %}

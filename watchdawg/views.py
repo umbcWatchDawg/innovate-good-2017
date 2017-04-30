@@ -47,5 +47,16 @@ def elements(request):
 
     return render(request, 'watchdawg/elements.html', {'id': obj_id, 'form': form})
 
+# step 4
 def questions(request):
-    return render(request, 'watchdawg/questions.html')
+    if request.method == 'POST':
+        obj_id = request.POST.get('id', '')
+
+    return render(request, 'watchdawg/questions.html', {'id': obj_id})
+
+# complete
+def submitted(request):
+    if request.method == 'POST':
+        obj_id = request.POST.get('id', '')
+
+    return render(request, 'watchdawg/submitted.html', {'id': obj_id, 'success': True})

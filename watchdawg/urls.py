@@ -14,4 +14,5 @@ urlpatterns = [
     url(r'^crime-type/$', login_required(views.crime_type), name='crime_type'),
     url(r'^elements/$', login_required(views.elements), name='elements'),
     url(r'^questions/$', login_required(views.questions), name='questions'),
+    url(r'^submitted/$', login_requred(views.submitted), name='submitted'),
 ]

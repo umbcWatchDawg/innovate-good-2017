@@ -27,6 +27,7 @@ class Crime(models.Model):
     date = models.DateTimeField('incident date and time')
     location = models.CharField(max_length=250,null=True)
     elements = models.CharField(max_length=150,validators=[validate_comma_separated_integer_list],null=True,choices=ELEMENTS)
+    raw_data = models.CharField(max_length=4000,null=True)
 
 class CrimeType(ModelForm):
     class Meta:
