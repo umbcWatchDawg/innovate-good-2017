@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block body %}
 <div class="container">
-  <form class="form-signin" action="{% url 'elements' %}">
+  <form class="form-signin" action="{% url 'elements' %}" method="POST">
     {% csrf_token %} 
     <h2 class="form-signin-heading">Enter the Type of Crime</h2>
         <input type="hidden" name="id" value="{{ id }}"/>
