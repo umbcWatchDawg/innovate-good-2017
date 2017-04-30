@@ -25,4 +25,4 @@ def victim_witness(request):
     return render(request, 'watchdawg/vicWit.html')
 
 def crime_type(request):
-    return render(request, 'watchdawg/crimeType')
+    return render(request, 'watchdawg/typeCrime')

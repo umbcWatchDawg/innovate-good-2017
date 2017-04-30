@@ -37,9 +37,9 @@
     <div class="header clearfix">
       <nav>
         <ul class="nav nav-pills pull-right">
-          <li role="presentation" class=""><a href="#">Home</a></li>
-          <li role="presentation" class=""><a href="#">About</a></li>
-          <li role="presentation" class=""><a href="#">Contact</a></li>
+            <li role="presentation" class="{% "active" if not path %}"><a href="{% url 'index' %}">Home</a></li>
+            <li role="presentation" class=""><a href="{% url 'about' %}">About</a></li>
+            <li role="presentation" class=""><a href="{% url 'contact' %}">Contact</a></li>
           {% if user.is_authenticated %}
             <li role="presentation"><a href="{% url 'logout' %}">Logout</a></li>
           {% else %}
