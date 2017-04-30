@@ -2,7 +2,8 @@
 {% block body %}
 <div class="jumbotron">
   <h1><b>Are you a:</b></h1>
-  <form action="{% url 'crime_type' %}">
+  <form action="{% url 'crime_type' %}" method="post">
+    <input type="hidden" name="id" value="{{ id }}"/>
     <button class="btn btn-lg" role="button" type="submit"><b>Victim</b></button>
     <p> or <p>
     <button class="btn btn-lg" role="button" type="submit"><b>Witness</b></button>
