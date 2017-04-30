@@ -140,12 +140,15 @@ body {
   padding: 20px 35px;
   background-color:#eddf18;
   font-size: 35px;
+  outline: 2px solid;
   outline-color: #000000;
   }
 
 .jumbotron .btn:active{
 	background-color: #000000;
 	color: #ffffff;
+	outline: 2px solid;
+	outline-color: #000000;
 }
 
 /* Supporting marketing content */
