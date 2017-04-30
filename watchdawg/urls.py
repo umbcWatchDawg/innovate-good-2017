@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^login/$', views.login, name='login'),
     url(r'^logout/$', djlogout, {'next_page': views.index}, name='logout'),
-    url(r'^report$', login_required(views.report)),
+    url(r'^report/$', login_required(views.report)),
+    url(r'^victim_witness/$', login_required(views.victim_witness)),
 ]
