@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth import logout
-from models import Crime
+from . import models
 from django.forms import Form
 
 def index(request):
@@ -26,7 +26,7 @@ def report(request):
 
 # step 1, sends POST to crime_type with victim or witness
 def victim_witness(request):
-    crime_obj = Crime(user_key=request.user)
+    crime_obj = models.Crime(user_key=request.user)
     crime_obj.save()
     obj_id = getattr(crime_obj, 'id')
     return render(request, 'watchdawg/vicWit.html', {'id': obj_id})
