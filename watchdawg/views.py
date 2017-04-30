@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth import logout
+from models import Crime
+from django.forms import Form
 
 def index(request):
     isAuth = request.user.is_authenticated
@@ -18,13 +20,23 @@ def contact(request):
 def login(request):
     return render(request, 'watchdawg/signIn.html')
 
+# sends a GET to go to victim_wintness
 def report(request):
     return render(request, 'watchdawg/report.html')
 
+# step 1, sends POST to crime_type with victim or witness
 def victim_witness(request):
-    return render(request, 'watchdawg/vicWit.html')
+    crime_obj = Crime(user_key=request.user)
+    crime_obj.save()
+    obj_id = getattr(crime_obj, 'id')
+    return render(request, 'watchdawg/vicWit.html', {'id': obj_id})
 
+#step 2
 def crime_type(request):
+    if request.method == 'POST':
+        form = Form(request.POST)
+
+
     return render(request, 'watchdawg/typeCrime.html')
 
 def elements(request):
