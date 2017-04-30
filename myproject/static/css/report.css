@@ -68,8 +68,8 @@ body {
 /* Custom page header */
 .header {
   background-color: #ffffff;
-  padding-right: 250px;
-  padding-left: 250px;
+/*  padding-right: 250px;
+  padding-left: 250px;*/
   padding-bottom: 25px;
   padding-top: 15px;
   /*padding-bottom: 20px;*/
@@ -239,8 +239,8 @@ body {
     background-color: #ffffff;
 	padding: 15px;
 	padding-bottom: 25px;
-	padding-right: 250px;
-    padding-left: 250px;
+	/*padding-right: 250px;
+    padding-left: 250px;*/
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   /*.jumbotron {
