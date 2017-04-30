@@ -10,14 +10,10 @@ def index(request):
     if isAuth:
         return report(request)
     else:
-        return HttpResponse("Hello, world. You've reached watchdawg!")
+        return render(request, 'watchdawg/signin.html')
 
 def login(request):
     return render(request, 'watchdawg/signin.html')
-
-def logout(request):
-    logout(request)
-    return index(request)
 
 #@login_required
 def report(request):
