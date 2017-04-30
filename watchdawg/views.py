@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth import logout
 from . import models
 from django.forms import Form
-import datetime
+from datetime import datetime
 
 def index(request):
     isAuth = request.user.is_authenticated
