@@ -2,7 +2,7 @@
 {% block body %}
     <div class="container">
 
-        <form class="form-signin" action="{% url 'login' %}">
+        <form class="form-signin" action="{% url "social:begin" "google-oauth2" %}">
         <h2 class="form-signin-heading">UMBC Watch Dawg</h2>
         
         <button class="btn btn-lg btn-primary btn-block" type="submit">Login with myUMBC</button>

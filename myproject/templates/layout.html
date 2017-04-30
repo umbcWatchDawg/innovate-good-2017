@@ -42,13 +42,13 @@
             {% if user.is_authenticated %}
               <li role="presentation"><a href="{% url 'logout' %}">Logout</a></li>
             {% else %}
-              <li role="presentation"><a href="{% url 'login' %}">Login</a></li>
+              <li role="presentation"><a href="{% url "social:begin" "google-oauth2" %}">Login</a></li>
             {% endif %}
           </ul>
         </nav>
         <h3 class="text-muted">Innovate Good</h3>
       </div>
-	<title>{% block title %}UMBC Wathc Dawg{% endblock %}</title>
+	<title>{% block title %}UMBC WatchDawg{% endblock %}</title>
 </head>
 
 <body>
