@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth import logout
-
 from . import models
 from datetime import datetime
 
@@ -36,7 +35,7 @@ def victim_witness(request):
 def crime_type(request):
     if request.method == 'POST':
         obj_id = request.POST.get('id','')
-        form = CrimeType()
+        form = models.CrimeType()
 
     return render(request, 'watchdawg/typeCrime.html', {'id': obj_id, 'form': form})
 
