@@ -33,4 +33,7 @@ class CrimeType(ModelForm):
         model = Crime
         fields = ['crime_type']
 
-
+class Elements(ModelForm):
+    class Meta:
+        model = Crime
+        fields = ['elements']

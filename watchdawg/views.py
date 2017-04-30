@@ -31,16 +31,21 @@ def victim_witness(request):
     obj_id = getattr(crime_obj, 'id')
     return render(request, 'watchdawg/vicWit.html', {'id': obj_id})
 
-#step 2
+# step 2, sends POST to elements
 def crime_type(request):
     if request.method == 'POST':
-        obj_id = request.POST.get('id','')
+        obj_id = request.POST.get('id', '')
         form = models.CrimeType()
 
     return render(request, 'watchdawg/typeCrime.html', {'id': obj_id, 'form': form})
 
+# step 3
 def elements(request):
-    return render(request, 'watchdawg/elements.html')
+    if request.method == 'POST':
+        obj_id = request.POST.get('id', '')
+        form = models.VictimWitness()
+
+    return render(request, 'watchdawg/elements.html', {'id': obj_id, 'form': form})
 
 def questions(request):
     return render(request, 'watchdawg/questions.html')
