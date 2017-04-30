@@ -6,7 +6,8 @@ body {
   padding-right: 50px;
   margin-left: 100px;
   margin-right: 100px;
-  max-width: 330px;
+  text-align: center;
+  max-width: 1000px;
   }
 .form-signin {
   background-color: #e5e5e5;
@@ -64,26 +65,26 @@ body {
 /* Custom page header */
 .header {
   background-color: #ffffff;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
   font-size: 10px;
-  margin-right: 30px;
-  margin-left: 30px;
+  /*margin-right: 30px;
+  margin-left: 30px;*/
   /*border-bottom: 1px solid #e5e5e5;*/
   /*background-color: #eddf18;*/
   
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
-  margin-right: 30px;
+  /*margin-right: 30px;
   margin-left: 30px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0;*/
   /*line-height: 40px;*/
   font-size: 20px;
 }
 .header h1 {
-  margin-right: 30px;
-  margin-left: 30px;
+  /*margin-right: 30px;
+  margin-left: 30px;*/
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -92,16 +93,16 @@ body {
 }
 
 .header h2 {
-  margin-right: 30px;
-  margin-left: 30px;
+  /*margin-right: 30px;
+  margin-left: 30px;*/
 	text-align: left-side;
 	font-size: 25px;
 	
 }
 
 .header h4 {
-  margin-right: 30px;
-  margin-left: 30px;
+  /*margin-right: 30px;
+  margin-left: 30px;*/
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
