@@ -36,11 +36,14 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-		  <!--{{if webpage active}-->
-            <li role="presentation" ><a href="#">Home</a></li>
-			<!--{else}-->			
-            <li role="presentation" ><a href="#">About</a></li>
-            <li role="presentation" class="active"><a href="#">Contact</a></li>
+            <li role="presentation" class=""><a href="#">Home</a></li>
+            <li role="presentation" class=""><a href="#">About</a></li>
+            <li role="presentation" class=""><a href="#">Contact</a></li>
+            {% if user.is_authenticated %}
+              <li role="presentation"><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+              <li role="presentation"><a href="{% url 'login' %}">Login</a></li>
+            {% endif %}
           </ul>
         </nav>
         <h3 class="text-muted">Innovate Good</h3>
