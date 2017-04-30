@@ -163,9 +163,9 @@ body {
 }
   
 .jumbotron .btn {
-  /*padding: 10px 25px;*/
+  padding: 10px 25px;
   background-color:#eddf18;
-  font-size: 35px;
+  font-size: 25px;
   }
 
 .jumbotron .btn:active{
