@@ -14,7 +14,7 @@ class Crime(models.Model):
 
     user_key = models.ForeignKey(AuthedUser,on_delete=models.CASCADE)
     is_victim = models.NullBooleanField()
-    crime_type = models.CharField(max_length=1000,null=True,choice=CRIME_TYPES)
+    crime_type = models.CharField(max_length=1000,null=True,choices=CRIME_TYPES)
     date = models.DateTimeField('incident date and time')
     location = models.CharField(max_length=250,null=True)
     elements = models.CharField(max_length=150,validators=[validate_comma_separated_integer_list],null=True)
