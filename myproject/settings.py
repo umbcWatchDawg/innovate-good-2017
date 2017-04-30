@@ -33,6 +33,7 @@ DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
+    'watchdawg.apps.WatchdawgConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
