@@ -15,7 +15,6 @@ def index(request):
 def login(request):
     return render(request, 'watchdawg/login.html')
 
-@login_required
 def logout(request):
     logout(request)
     return index(request)
