@@ -41,10 +41,14 @@ body {
   padding: 10px 25px;
   background-color:#eddf18;
   font-size: 20px;
+  outline: 2px solid;
+  outline-color: #000000;
 }
 
 .form-signin .btn:active{
-  background-color: #000000;		
+  background-color: #000000;
+  outline: 2px solid;
+  outline-color: #000000;  
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
