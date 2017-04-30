@@ -4,8 +4,11 @@ body {
   padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .form-signin {
+  background-color: #e5e5e5;
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
@@ -128,6 +131,7 @@ body {
     max-width: 730px;
 	padding-left: 40px;
 	padding-right: 40px;
+	background-color: #e5e5e5;
   }
 }
 .container-narrow > hr {
