@@ -6,10 +6,11 @@ body {
   padding-right: 50px;
   margin-left: 100px;
   margin-right: 100px;
-}
+  max-width: 330px;
+  }
 .form-signin {
   background-color: #e5e5e5;
-  max-width: 330px;
+  /*max-width: 330px;*/
   padding: 15px;
   margin: 0 auto;
 }
@@ -62,6 +63,7 @@ body {
 
 /* Custom page header */
 .header {
+  background-color: #ffffff;
   padding-bottom: 20px;
   font-size: 10px;
   margin-right: 30px;
