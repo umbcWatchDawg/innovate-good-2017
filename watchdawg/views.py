@@ -10,10 +10,10 @@ def index(request):
         return render(request, 'watchdawg/signIn.html')
 
 def about(request):
-    return render(request, 'watchdawg/about.html')
+    return render(request, 'watchdawg/about.html', {'path': 'about'})
 
 def contact(request):
-    return render(request, 'watchdawg/contact.html')
+    return render(request, 'watchdawg/contact.html', {'path': 'contact')
 
 def login(request):
     return render(request, 'watchdawg/signIn.html')
