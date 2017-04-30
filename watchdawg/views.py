@@ -43,7 +43,7 @@ def crime_type(request):
 def elements(request):
     if request.method == 'POST':
         obj_id = request.POST.get('id', '')
-        form = models.VictimWitness()
+        form = models.Elements()
 
     return render(request, 'watchdawg/elements.html', {'id': obj_id, 'form': form})
 
