@@ -43,6 +43,10 @@ body {
   font-size: 20px;
 }
 
+.form-signin .btn:active{
+  background-color: #000000;		
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -123,6 +127,7 @@ body {
     text-align: center;
   border-bottom: 1px solid #e5e5e5;
   font-size: 16px;
+  
   }
 .jumbotron j2{
   text-align: center;
@@ -135,6 +140,10 @@ body {
   padding: 20px 35px;
   background-color:#eddf18;
   font-size: 35px;
+}
+
+.jumbotron .btn:active{
+	background-color: #000000;
 }
 
 /* Supporting marketing content */
@@ -154,8 +163,9 @@ body {
     background-color: #eddf18;
 	color: #000000;
 }
-
-
+.nav li a:active{
+	background-color: #000000;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -163,8 +173,8 @@ body {
   .header,
   .marketing,
   .footer {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   /* Space out the masthead */
   .header {
