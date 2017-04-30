@@ -41,14 +41,10 @@ body {
   padding: 10px 25px;
   background-color:#eddf18;
   font-size: 20px;
-  outline: 2px solid;
-  outline-color: #000000;
 }
 
 .form-signin .btn:active{
   background-color: #000000;
-  outline: 2px solid;
-  outline-color: #000000;  
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -144,15 +140,11 @@ body {
   padding: 20px 35px;
   background-color:#eddf18;
   font-size: 35px;
-  outline: 2px solid;
-  outline-color: #000000;
   }
 
 .jumbotron .btn:active{
 	background-color: #000000;
 	color: #ffffff;
-	outline: 2px solid;
-	outline-color: #000000;
 }
 
 /* Supporting marketing content */
