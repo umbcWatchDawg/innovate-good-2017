@@ -126,8 +126,8 @@ body {
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
   }
 }
 .container-narrow > hr {
@@ -136,8 +136,8 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
 	  margin-right: 30px;
   margin-left: 30px;
   text-align: center;
