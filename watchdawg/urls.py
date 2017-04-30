@@ -6,6 +6,6 @@ from . import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^login/$', views.login, name='login'),
-    url(r'^logout/$', logout, {'next-page': '/'} name='gauth-logout'),
+    url(r'^logout/$', logout, {'next-page': '/'}, name='logout'),
     url(r'^report$', login_required(views.report)),
 ]
