@@ -1,9 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-#from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
-
-# Create your views here.
 
 def index(request):
     isAuth = request.user.is_authenticated
@@ -11,6 +8,12 @@ def index(request):
         return report(request)
     else:
         return render(request, 'watchdawg/signIn.html')
+
+def about(request):
+    return render(request, 'watchdawg/about.html')
+
+def contact(request):
+    return render(request, 'watchdawg/contact.html')
 
 def login(request):
     return render(request, 'watchdawg/signIn.html')
@@ -20,3 +23,6 @@ def report(request):
 
 def victim_witness(request):
     return render(request, 'watchdawg/vicWit.html')
+
+def crime_type(request):
+    return render(request, 'watchdawg/crimeType')

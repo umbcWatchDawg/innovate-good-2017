@@ -1,9 +1,11 @@
 {% extends "layout.html" %}
 {% block body %}
 <div class="jumbotron">
-  <h1><b>Are you:</b></h1>
-  <p><a class="btn btn-lg btn-success" href="#" role="button"><b>Victim</b></a></p>
-  <p> or <p>
-  <p><a class="btn btn-lg btn-success" href="#" role="button"><b>Witness</b></a></p>
+  <h1><b>Are you a:</b></h1>
+  <form action="{% url 'crime_type' %}">
+    <button class="btn btn-lg btn-success" role="button" type="submit"><b>Victim</b></button>
+    <p> or <p>
+    <button class="btn btn-lg btn-success" role="button" type="submit"><b>Witness</b></button>
+  </form>
 </div>
 {% endblock %}
