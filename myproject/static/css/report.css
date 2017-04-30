@@ -4,8 +4,8 @@ body {
   padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
-  /*margin-left: 100px;
-  margin-right: 100px;*/
+  margin-left: 100px;
+  margin-right: 100px;
   text-align: center;
   max-width: 750px;
   }
@@ -68,8 +68,8 @@ body {
 /* Custom page header */
 .header {
   background-color: #ffffff;
-  padding-right: 150px;
-  padding-left: 150px;
+  padding-right: 250px;
+  padding-left: 250px;
   padding-bottom: 25px;
   padding-top: 15px;
   /*padding-bottom: 20px;*/
@@ -239,8 +239,8 @@ body {
     background-color: #ffffff;
 	padding: 15px;
 	padding-bottom: 25px;
-	padding-right: 130px;
-    padding-left: 130px;
+	padding-right: 250px;
+    padding-left: 250px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   /*.jumbotron {
