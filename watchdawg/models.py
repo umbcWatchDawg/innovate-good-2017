@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.validators import validate_comma_separated_integer_list
-from django.contrib.models import User as AuthedUser
+from django.contrib.auth.models import User as AuthedUser
 
 # Create your models here.
 

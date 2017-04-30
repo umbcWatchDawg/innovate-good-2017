@@ -59,7 +59,7 @@ body {
 .header {
   padding-bottom: 20px;
   font-size: 10px;
-  border-bottom: 1px solid #e5e5e5;
+  /*border-bottom: 1px solid #e5e5e5;*/
   /*background-color: #eddf18;*/
   
 }
@@ -119,13 +119,13 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  /*border-bottom: 1px solid #e5e5e5;*/
 }
 
 .jumbotron j1{
   /*border-bottom: 1px solid #e5e5e5;*/
     text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+ /* border-bottom: 1px solid #e5e5e5;*/
   font-size: 16px;
   
   }
@@ -181,7 +181,7 @@ body {
     margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
+  /*.jumbotron {
     border-bottom: 0;
-  }
+  }*/
 }
