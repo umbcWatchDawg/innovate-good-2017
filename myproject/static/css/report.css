@@ -12,7 +12,8 @@ body {
 .form-signin {
   background-color: #e5e5e5;
   /*max-width: 330px;*/
-  padding: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
 }
 .form-signin .form-signin-heading{
@@ -143,6 +144,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+	background-color: #e5e5e5;
 	padding-left: 40px;
 	padding-right: 40px;
 	  margin-right: 30px;
