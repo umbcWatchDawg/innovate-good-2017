@@ -18,3 +18,6 @@ def login(request):
 #@login_required
 def report(request):
     return render(request, 'watchdawg/report.html')
+
+def victim_witness(request):
+    return render(request, 'watchdawg/vicWit.html')

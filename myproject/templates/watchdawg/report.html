@@ -1,20 +1,10 @@
 {% extends "layout.html" %}
 {% block body %}
-      <div class="jumbotron">
-        <h1><b>UMBC Watch Dawg</b></h1>
-		<p>      </p>
-		
-		<form>
-<input class="btn btn-lg btn-success" type="button" value="Report A Crime" onclick="window.location.href='vicWit.html'" />
-</form>
-		
-		<p class="lead"><j1>Welcome to the UMBC Watch Dog.  If you would like to document a crime, click the button below, if you would like to submit the report to the UMBC police, click "send report" at the end.</j1></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-        </div>
-
-        <!--<div class="col-lg-6"> -->
-        <!--</div>-->
-  {% endblock %}
+<div class="jumbotron">
+  <h1><b>UMBC Watch Dawg</b></h1>
+    <form action="{% url 'victim_witness' %}">
+        <input class="btn btn-lg btn-success" type="submit" value="Report A Crime" />
+    </form>
+    <p class="lead"><j1>Welcome to the UMBC Watch Dog.  If you would like to document a crime, click the button below, if you would like to submit the report to the UMBC police, click "send report" at the end.</j1></p>
+</div>
+{% endblock %}
