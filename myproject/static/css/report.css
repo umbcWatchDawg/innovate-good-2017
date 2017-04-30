@@ -138,8 +138,8 @@ body {
 .jumbotron {
 	padding-left: 40px;
 	padding-right: 40px;
-	  margin-right: 30px;
-  margin-left: 30px;
+	/*margin-right: 30px;
+    margin-left: 30px;*/
   text-align: center;
   /*border-bottom: 1px solid #e5e5e5;*/
 }
