@@ -13,7 +13,7 @@ def index(request):
         return HttpResponse("Hello, world. You've reached watchdawg!")
 
 def login(request):
-    return render(request, 'watchdawg/login.html')
+    return render(request, 'watchdawg/signin.html')
 
 def logout(request):
     logout(request)
