@@ -27,7 +27,7 @@ def report(request):
 
 # step 1, sends POST to crime_type with victim or witness
 def victim_witness(request):
-    crime_obj = models.Crime(user_key=request.user,date=datetime.now())
+    crime_obj = models.Crime(user_key=request.user,is_victim=False,date=datetime.now())
     crime_obj.save()
     obj_id = getattr(crime_obj, 'id')
     return render(request, 'watchdawg/vicWit.html', {'id': obj_id})
